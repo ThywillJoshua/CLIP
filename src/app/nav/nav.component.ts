@@ -22,10 +22,4 @@ export class NavComponent implements OnInit {
 
     this.model.toggleModal('auth');
   }
-
-  async logout($event: Event) {
-    $event.preventDefault();
-
-    await this.afAuth.signOut();
-  }
 }
