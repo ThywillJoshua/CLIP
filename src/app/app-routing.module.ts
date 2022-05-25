@@ -34,7 +34,13 @@ const notFoundRoute = {
   component: NotFoundComponent,
 };
 
-const routes: Routes = [homeRoute, aboutRoute, clipRoute, notFoundRoute];
+const routes: Routes = [
+  homeRoute,
+  aboutRoute,
+  clipRoute,
+  lazyRoutes,
+  notFoundRoute,
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
