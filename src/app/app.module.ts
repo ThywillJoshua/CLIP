@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { UserModule } from './user/user.module';
-import { VideoModule } from './video/video.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { ClipComponent } from './clip/clip.component';
@@ -15,6 +14,8 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { ClipsListComponent } from './clips-list/clips-list.component';
+import { FbTimestampPipe } from './pipes/fb-timestamp.pipe';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,8 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
     AboutComponent,
     ClipComponent,
     NotFoundComponent,
+    ClipsListComponent,
+    FbTimestampPipe,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,6 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
-    VideoModule,
     AppRoutingModule,
   ],
   providers: [],
